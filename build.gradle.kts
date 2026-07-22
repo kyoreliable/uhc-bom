@@ -8,3 +8,11 @@ dependencies {
     api(libs.uhc)
   }
 }
+
+publishing {
+  publications {
+    create<MavenPublication>("maven") {
+      from(components["javaPlatform"])
+    }
+  }
+}
