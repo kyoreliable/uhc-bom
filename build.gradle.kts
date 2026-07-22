@@ -4,5 +4,7 @@ plugins {
 }
 
 dependencies {
-  constraints {}
+  constraints {
+    api(libs.uhc)
+  }
 }
